@@ -7,12 +7,12 @@ const Friend = (props) => {
     const navigate = useNavigate();
 
     const showFriendDetail = () => {
-        const path = `/friends/${id}`
+        const path = `/friend/${id}`
         navigate(path);
     }
     return (
         <div>
-            <h2>Name: {name}</h2>
+            <h2 className='text-xl font-bold py-4'>Name: {name}</h2>
             <button  onClick={showFriendDetail}
             className='rounded bg-sky-300 text-white py-2 px-4'>{username}: id {id}
             </button>
